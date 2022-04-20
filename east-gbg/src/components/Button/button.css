@@ -1,0 +1,18 @@
+.btn {
+  padding: 100px 200px;
+  background-color: hotpink;
+  border: 1px red solid;
+  color: white;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: Helvetica;
+  transition: 0.2s ease;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: red;
+}
