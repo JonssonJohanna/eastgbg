@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import Button from "./components/Button";
-import Match from "./components/Match";
+import LoveCalculator from "./components/LoveCalculator";
 
 function App() {
   return (
     <div className="app">
-      <Match />
+      <LoveCalculator />
     </div>
   );
 }

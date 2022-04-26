@@ -2,8 +2,8 @@ import Button from "../Button";
 import React, { useState, useEffect } from "react";
 
 const Match = () => {
-  const [fname, setFname] = useState("Amanda");
-  const [sname, setSname] = useState("Johanna");
+  const [fname, setFname] = useState("");
+  const [sname, setSname] = useState("");
 
   const options = {
     method: "GET",
@@ -43,7 +43,7 @@ const Match = () => {
           />
         </label>
         <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
-        {/*        <p>{fname + sname}</p> */}
+        <p>{fname + sname}</p>
       </form>
     </div>
   );
