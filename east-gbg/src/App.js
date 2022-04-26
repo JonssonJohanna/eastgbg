@@ -29,21 +29,20 @@ function App() {
 
   return (
     <div>
-      {/* <form>
+      <form>
         <label>
           Your name
           <input type="text" onChange={(text) => setFname({ fname: text })} />
         </label>
-
         <label>
           Your name
           <input type="text" onChange={(text) => setSname({ sname: text })} />
         </label>
         <Button buttonText="Get match" handleClick={() => getMatch} />
         <p>{fname + sname}</p>
-      </form> */}
-      <h2>your name {fname}</h2>
-      <h2>your lovers name {sname}</h2>
+      </form>
+      {/* <h2>your name {fname}</h2>
+      <h2>your lovers name {sname}</h2> */}
     </div>
   );
 }
