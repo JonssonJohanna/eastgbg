@@ -1,13 +1,11 @@
 import react, { useState, useEffect } from "react";
 // import "./App.css";
-
 import React from "react";
 import Button from "./components/Button";
-// import { Router } from "@reach/router";
 
 function App() {
-  const [fname, setFname] = React.useState();
-  const [sname, setSname] = React.useState();
+  const [fname, setFname] = useState();
+  const [sname, setSname] = useState();
   useEffect(() => {
     getMatch();
   }, []);
@@ -26,12 +24,25 @@ function App() {
     const data = await response.json();
     console.log(data);
     setFname(data.fname);
+    setSname(data.sname);
   };
 
   return (
     <div>
-      <h2>hello {fname}</h2>
-      <h2>hello {sname}</h2>
+      <form onSubmit={fname}>
+        <label>
+          Your name
+          <input type="text" onChange={(text) => setFname({ fname: text })} />
+        </label>
+      </form>
+      <form onSubmit={sname}>
+        <label>
+          Your name
+          <input type="text" onChange={(text) => setSname({ sname: text })} />
+        </label>
+      </form>
+      {/* <h2>your name {fname}</h2>
+      <h2>your lovers name {sname}</h2> */}
       <Button>Click me</Button>
     </div>
   );
