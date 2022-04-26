@@ -1,14 +1,10 @@
-import react, { useState, useEffect } from "react";
-// import "./App.css";
-import React from "react";
+import React, { useState } from "react";
 import Button from "./components/Button";
 
 function App() {
-  const [fname, setFname] = useState();
-  const [sname, setSname] = useState();
-  useEffect(() => {
-    getMatch();
-  }, []);
+  const [fname, setFname] = useState("Amanda");
+  const [sname, setSname] = useState("Johanna");
+
   const options = {
     method: "GET",
     headers: {
@@ -16,15 +12,15 @@ function App() {
       "X-RapidAPI-Key": "5e354bc8acmsh9567dbb31f16aabp19e295jsnf6cac3b70ec4",
     },
   };
-  const getMatch = async () => {
+
+  const getMatch = async (e) => {
+    e.preventDefault();
     const response = await fetch(
       `https://love-calculator.p.rapidapi.com/getPercentage?fname=${fname}&sname=${sname}`,
       options
     );
     const data = await response.json();
     console.log(data);
-    setFname(data.fname);
-    setSname(data.sname);
   };
 
   return (
@@ -32,17 +28,25 @@ function App() {
       <form>
         <label>
           Your name
-          {<input type="text" onChange={(e) => setFname(e.target.value)} />}
+          <input
+            type="text"
+            value={fname}
+            onChange={(event) => setFname(event.target.value)}
+          />
         </label>
+
         <label>
           Your name
-          <input type="text" onChange={(e) => setSname(e.target.value)} />
+          <input
+            type="text"
+            value={sname}
+            onChange={(event) => setSname(event.target.value)}
+          />
         </label>
-        <Button buttonText="Get match" handleClick={() => getMatch} />
+
+        <button onClick={(e) => getMatch(e)}>Get Match</button>
         <p>{fname + sname}</p>
       </form>
-      {/* <h2>your name {fname}</h2>
-      <h2>your lovers name {sname}</h2> */}
     </div>
   );
 }
