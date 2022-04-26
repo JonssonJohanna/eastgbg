@@ -36,16 +36,16 @@ function App() {
         </label>
 
         <label>
-          Your name
+          Your lover's name
           <input
             type="text"
             value={sname}
             onChange={(event) => setSname(event.target.value)}
           />
         </label>
-
         <button onClick={(e) => getMatch(e)}>Get Match</button>
-        <p>{fname + sname}</p>
+
+        {/*        <p>{fname + sname}</p> */}
       </form>
     </div>
   );
