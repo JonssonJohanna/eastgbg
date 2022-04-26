@@ -32,11 +32,11 @@ function App() {
       <form>
         <label>
           Your name
-          <input type="text" onChange={(text) => setFname({ fname: text })} />
+          {<input type="text" onChange={(e) => setFname(e.target.value)} />}
         </label>
         <label>
           Your name
-          <input type="text" onChange={(text) => setSname({ sname: text })} />
+          <input type="text" onChange={(e) => setSname(e.target.value)} />
         </label>
         <Button buttonText="Get match" handleClick={() => getMatch} />
         <p>{fname + sname}</p>
