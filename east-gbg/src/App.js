@@ -18,17 +18,18 @@ function App() {
   };
   const getMatch = async () => {
     const response = await fetch(
-      "https://love-calculator.p.rapidapi.com/getPercentage?fname=${fname}&sname=${sname}"
+      `https://love-calculator.p.rapidapi.com/getPercentage?fname=${fname}&sname=${sname}`,
+      options
     );
     const data = await response.json();
-    // console.log(data);
+    console.log(data);
     setFname(data.fname);
     setSname(data.sname);
   };
 
   return (
     <div>
-      <form>
+      {/* <form>
         <label>
           Your name
           <input type="text" onChange={(text) => setFname({ fname: text })} />
@@ -40,9 +41,9 @@ function App() {
         </label>
         <Button buttonText="Get match" handleClick={() => getMatch} />
         <p>{fname + sname}</p>
-      </form>
-      {/* <h2>your name {fname}</h2>
-      <h2>your lovers name {sname}</h2> */}
+      </form> */}
+      <h2>your name {fname}</h2>
+      <h2>your lovers name {sname}</h2>
     </div>
   );
 }
