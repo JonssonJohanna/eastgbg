@@ -1,10 +1,11 @@
 import Button from "../Button";
 import React, { useState, useEffect } from "react";
-// import Result from "../Result";
+import Result from "../Result";
 
 const Match = () => {
   const [fname, setFname] = useState("");
   const [sname, setSname] = useState("");
+  const [percentage, setPercentage] = useState();
 
   const options = {
     method: "GET",
@@ -22,6 +23,9 @@ const Match = () => {
     );
     const data = await response.json();
     console.log(data);
+    // setFname(fname);
+    // setSname(sname);
+    setPercentage(data.percentage);
   };
 
   return (
@@ -45,7 +49,7 @@ const Match = () => {
         </label>
         <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
         <p>{fname + sname}</p>
-        {/* <Result percentage={percentage} /> */}
+        <Result percentage={percentage} />
       </form>
     </div>
   );
