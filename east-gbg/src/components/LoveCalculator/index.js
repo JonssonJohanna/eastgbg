@@ -1,12 +1,14 @@
 import Button from "../Button";
 import React, { useState, useEffect } from "react";
-import Result from "../Result";
+import sad from "./../../assets/sound/sad-audience.mp3";
+import happy from "./../../assets/sound/happy-audience.mp3";
 
 const Match = () => {
   const [fname, setFname] = useState("");
   const [sname, setSname] = useState("");
   const [percentage, setPercentage] = useState();
   const [result, setResult] = useState("");
+  const [isPlaying, setIsPlaying] = React.useState(false);
 
   const options = {
     method: "GET",
@@ -60,12 +62,13 @@ const Match = () => {
         )}
         {parseInt(percentage) < 50 && (
           <div>
+            <audio src={sad} muted={isPlaying} autoPlay={true} />
             <img src="https://i.gifer.com/UuFm.gif" />
           </div>
         )}
         {parseInt(percentage) > 50 && (
           <div>
-            <p>Great wohoo</p>
+            <audio src={happy} muted={isPlaying} autoPlay={true} />
           </div>
         )}
 
