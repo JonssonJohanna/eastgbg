@@ -58,6 +58,12 @@ const Match = () => {
         ) : (
           <p>Write your lovers name</p>
         )}
+        {/* {percentage <
+          "50"(
+            <div>
+              <p>oh no</p>
+            </div>
+          )} */}
         {/* <Result percentage={percentage} result={result}>
           %
         </Result> */}
