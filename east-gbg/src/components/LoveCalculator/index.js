@@ -1,5 +1,5 @@
 import Button from "../Button";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import sad from "./../../assets/sound/sad-audience.mp3";
 import happy from "./../../assets/sound/happy-audience.mp3";
 import Redo from "../Redo";
@@ -9,7 +9,7 @@ const Match = () => {
   const [sname, setSname] = useState("");
   const [percentage, setPercentage] = useState();
   const [result, setResult] = useState("");
-  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [audience, setAudience] = React.useState(false);
 
   const options = {
     method: "GET",
@@ -31,6 +31,7 @@ const Match = () => {
     // setSname(sname);
     setPercentage(data.percentage);
     setResult(data.result);
+    setAudience(data.audience);
   };
 
   return (
@@ -63,15 +64,15 @@ const Match = () => {
         )}
         {parseInt(percentage) < 50 && (
           <div>
-            <audio src={sad} muted={isPlaying} autoPlay={true} />
+            <audio src={sad} muted={audience} autoPlay={true} />
+            <Redo />
           </div>
         )}
         {parseInt(percentage) > 50 && (
           <div>
-            <audio src={happy} muted={isPlaying} autoPlay={true} />
+            <audio src={happy} muted={audience} autoPlay={true} />
           </div>
         )}
-        <Redo />
 
         {/* <Result percentage={percentage} result={result}>
           %

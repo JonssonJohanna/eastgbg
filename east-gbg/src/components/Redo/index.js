@@ -1,17 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./redo.css";
 
 const Redo = () => {
   const [redo, setRedo] = useState(false);
 
-  function clickEventHandler() {
+  // function clickEventHandler() {
+  //   setRedo(true);
+  // }
+  useEffect(() => {
     setRedo(true);
-  }
+  }, [redo]);
   return (
     <div>
-      <button onClick={clickEventHandler}>REDO</button>
-      {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />}
+      <button onClick={setRedo}>REDO</button>
+      <div>
+        {/* {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />} */}
+      </div>
     </div>
   );
 };

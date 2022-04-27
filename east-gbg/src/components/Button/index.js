@@ -16,7 +16,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  buttonText: "what?",
+  buttonText: "Find out if you match",
 };
 
 export default Button;
