@@ -1,5 +1,6 @@
 import Button from "../Button";
 import React, { useState, useEffect } from "react";
+// import Result from "../Result";
 
 const Match = () => {
   const [fname, setFname] = useState("");
@@ -44,6 +45,7 @@ const Match = () => {
         </label>
         <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
         <p>{fname + sname}</p>
+        {/* <Result percentage={percentage} /> */}
       </form>
     </div>
   );
