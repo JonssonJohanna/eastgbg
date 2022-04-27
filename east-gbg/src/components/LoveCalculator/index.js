@@ -2,6 +2,7 @@ import Button from "../Button";
 import React, { useState, useEffect } from "react";
 import sad from "./../../assets/sound/sad-audience.mp3";
 import happy from "./../../assets/sound/happy-audience.mp3";
+import Redo from "../Redo";
 
 const Match = () => {
   const [fname, setFname] = useState("");
@@ -63,7 +64,6 @@ const Match = () => {
         {parseInt(percentage) < 50 && (
           <div>
             <audio src={sad} muted={isPlaying} autoPlay={true} />
-            <img src="https://i.gifer.com/UuFm.gif" />
           </div>
         )}
         {parseInt(percentage) > 50 && (
@@ -71,6 +71,7 @@ const Match = () => {
             <audio src={happy} muted={isPlaying} autoPlay={true} />
           </div>
         )}
+        <Redo />
 
         {/* <Result percentage={percentage} result={result}>
           %
