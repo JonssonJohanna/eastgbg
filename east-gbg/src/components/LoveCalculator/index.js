@@ -58,12 +58,17 @@ const Match = () => {
         ) : (
           <p>Write your lovers name</p>
         )}
-        {/* {percentage <
-          "50"(
-            <div>
-              <p>oh no</p>
-            </div>
-          )} */}
+        {parseInt(percentage) < 50 && (
+          <div>
+            <p>oh no</p>
+          </div>
+        )}
+        {parseInt(percentage) > 50 && (
+          <div>
+            <p>Great wohoo</p>
+          </div>
+        )}
+
         {/* <Result percentage={percentage} result={result}>
           %
         </Result> */}
