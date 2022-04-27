@@ -60,7 +60,7 @@ const Match = () => {
         )}
         {parseInt(percentage) < 50 && (
           <div>
-            <p>oh no</p>
+            <img src="https://i.gifer.com/UuFm.gif" />
           </div>
         )}
         {parseInt(percentage) > 50 && (
