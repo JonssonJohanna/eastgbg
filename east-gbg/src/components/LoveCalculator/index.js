@@ -6,6 +6,7 @@ const Match = () => {
   const [fname, setFname] = useState("");
   const [sname, setSname] = useState("");
   const [percentage, setPercentage] = useState();
+  const [result, setResult] = useState("");
 
   const options = {
     method: "GET",
@@ -26,6 +27,7 @@ const Match = () => {
     // setFname(fname);
     // setSname(sname);
     setPercentage(data.percentage);
+    setResult(data.result);
   };
 
   return (
@@ -48,8 +50,8 @@ const Match = () => {
           />
         </label>
         <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
-        <p>{fname + sname}</p>
-        <Result percentage={percentage} />
+        if (result = ) {}
+        <Result percentage={percentage} result={result} />
       </form>
     </div>
   );
