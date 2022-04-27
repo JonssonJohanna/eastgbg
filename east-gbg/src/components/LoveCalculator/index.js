@@ -50,8 +50,17 @@ const Match = () => {
           />
         </label>
         <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
-        if (result = ) {}
-        <Result percentage={percentage} result={result} />
+        {percentage && result ? (
+          <div>
+            <p>{percentage}%</p>
+            <p>{result}</p>
+          </div>
+        ) : (
+          <p>Write your lovers name</p>
+        )}
+        {/* <Result percentage={percentage} result={result}>
+          %
+        </Result> */}
       </form>
     </div>
   );

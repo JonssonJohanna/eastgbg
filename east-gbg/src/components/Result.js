@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 const Result = ({ percentage, result }) => {
   return (
     <div>
-      <p>{percentage} %</p>
+      <p>{percentage} </p>
       <p>{result}</p>
     </div>
   );
