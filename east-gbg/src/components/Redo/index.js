@@ -8,12 +8,12 @@ const Redo = () => {
   // function clickEventHandler() {
   //   setRedo(true);
   // }
-  useEffect(() => {
+  /*   useEffect(() => {
     setRedo(true);
-  }, [redo]);
+  }, [redo]); */
   return (
     <div>
-      <button onClick={() => setRedo(true)}>REDO</button>
+      {!redo && <button onClick={() => setRedo(true)}>REDO</button>}
       <div>
         {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />}
       </div>
