@@ -13,9 +13,9 @@ const Redo = () => {
   }, [redo]);
   return (
     <div>
-      <button onClick={setRedo}>REDO</button>
+      <button onClick={() => setRedo(true)}>REDO</button>
       <div>
-        {/* {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />} */}
+        {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />}
       </div>
     </div>
   );
