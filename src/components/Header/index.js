@@ -7,7 +7,7 @@ const Header = () => {
     //   <h1>Love calculator</h1>;
     // </Banner>
     <Banner img="images/banner2.png" alt="scott disick">
-      <h1>Love calculator</h1>;
+      <h1>Love calculator</h1>
     </Banner>
   );
 };

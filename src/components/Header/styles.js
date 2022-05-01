@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-// export const banner = styled.div`
-//   width: 100%;
-//   backgro img {
-//     width: 100%;
-//     height: 5rem;
-//   }
-// `;
-
 export const Banner = styled.header`
   background-image: ${(props) => `url(${props.img})`};
   background-size: cover;
@@ -16,6 +8,7 @@ export const Banner = styled.header`
   width: 100%;
   height: 10rem;
   background-repeat: no-repeat;
+  color: white;
 
   img {
     width: 100%;
@@ -23,5 +16,8 @@ export const Banner = styled.header`
   }
   h1 {
     margin-top: 0;
+    padding-top: 1rem;
+    font-size: 4rem;
+    text-align: center;
   }
 `;
