@@ -58,7 +58,14 @@ const Match = () => {
             />
           </label>
         </div>
-        <p>Write your name</p>
+        <p className="introduction">
+          Love is already complicated enough. Let the love calculator decide if
+          your crush is worth your time.
+        </p>
+        <p className="introduction">
+          Type in your and the name of your crush to find out if you are a
+          match!
+        </p>
         <Button
           className="matchButton"
           handleClick={(e) => getMatch(e)}

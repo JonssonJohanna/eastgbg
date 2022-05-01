@@ -19,9 +19,16 @@
   color: white;
   display: flex;
   flex-direction: column;
-  padding: 4rem;
+  padding: 3rem;
   font-size: 2rem;
   padding-top: 5rem;
+}
+
+.introduction {
+  width: 24%;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
 }
 
 .matchButton {

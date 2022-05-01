@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { device } from "./../MediaQueries/";
 
 export const Banner = styled.header`
   background-image: ${(props) => `url(${props.img})`};
@@ -20,5 +21,11 @@ export const Banner = styled.header`
     padding-top: 1rem;
     font-size: 4rem;
     text-align: center;
+  }
+
+  @media ${device.mobileL} {
+    width: 100%;
+    /*   display: flex;
+    flex-direction: row; */
   }
 `;
