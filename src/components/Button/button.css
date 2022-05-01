@@ -1,18 +1,18 @@
 .btn {
-  padding: 100px 200px;
-  background-color: hotpink;
-  border: 1px red solid;
+  height: 4rem;
+  width: 19rem;
+  margin-top: 3rem;
+  background-color: #b2322f;
   color: white;
-  border-radius: 2px;
-  font-weight: bold;
+  border-radius: 30px;
   font-size: 12px;
   letter-spacing: 1px;
-  font-family: Helvetica;
+  font-family: Cherry;
   transition: 0.2s ease;
-  margin: 20px 0;
   cursor: pointer;
+  display: block;
 }
 
 .btn:hover {
-  background-color: red;
+  background-color: #ac1d1b;
 }

@@ -8,6 +8,8 @@ body {
   margin: 0;
   font-family: "Cherry";
   background-color: #e19689;
+  display: flex;
+  justify-content: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -5,7 +5,7 @@ export const Banner = styled.header`
   background-size: cover;
   background-position: bottom;
   margin-top: 0;
-  width: 100%;
+  width: 100vw;
   height: 10rem;
   background-repeat: no-repeat;
   color: white;

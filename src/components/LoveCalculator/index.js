@@ -34,8 +34,11 @@ const Match = () => {
   };
 
   return (
-    <div>
-      <form>
+    <div
+      className="matchContainer"
+      style={{ backgroundImage: "url(/images/Heart.svg)" }}
+    >
+      <form className="formContainer">
         <label>
           Your name
           <input
