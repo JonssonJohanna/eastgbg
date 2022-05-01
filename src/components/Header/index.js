@@ -1,5 +1,6 @@
 // import img from "../../assets/images/banner2.png";
 import { Banner } from "./styles";
+import "./../../../src/assets/fonts/Cherry.woff";
 
 const Header = () => {
   return (

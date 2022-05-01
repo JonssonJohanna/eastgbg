@@ -16,6 +16,7 @@ export const Banner = styled.header`
   }
   h1 {
     margin-top: 0;
+    font-family: Cherry;
     padding-top: 1rem;
     font-size: 4rem;
     text-align: center;

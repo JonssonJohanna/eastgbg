@@ -1,5 +1,13 @@
+/* @font-face {
+  font-family: "Cherry";
+  src: local("Cherry"), local("Cherry"),
+    url("../src/assets/fonts/Cherry.woff") format("woff");
+}
+ */
 .App {
   text-align: center;
+
+  background-color: #e19689;
 }
 
 .App-logo {
@@ -26,13 +34,4 @@
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
