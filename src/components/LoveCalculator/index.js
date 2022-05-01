@@ -58,6 +58,7 @@ const Match = () => {
             />
           </label>
         </div>
+        <p>Write your name</p>
         <Button
           className="matchButton"
           handleClick={(e) => getMatch(e)}
@@ -68,7 +69,7 @@ const Match = () => {
             <p>{result}</p>
           </div>
         ) : (
-          <p>Write your lovers name</p>
+          <p>se your result</p>
         )}
         {parseInt(percentage) < 50 && (
           <div>
