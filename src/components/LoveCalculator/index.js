@@ -1,4 +1,5 @@
 import Button from "../Button";
+import "./loveCalculator.css";
 import React, { useState } from "react";
 import sad from "./../../assets/sound/sad-audience.mp3";
 import happy from "./../../assets/sound/happy-audience.mp3";
@@ -39,23 +40,27 @@ const Match = () => {
       style={{ backgroundImage: "url(/images/Heart.svg)" }}
     >
       <form className="formContainer">
-        <label>
-          Your name
-          <input
-            type="text"
-            value={fname}
-            onChange={(event) => setFname(event.target.value)}
-          />
-        </label>
-        <label>
-          Your lover's name
-          <input
-            type="text"
-            value={sname}
-            onChange={(event) => setSname(event.target.value)}
-          />
-        </label>
-        <Button handleClick={(e) => getMatch(e)}>Get Match /</Button>
+        <div className="inputRow">
+          <label className="text">
+            Your name
+            <input
+              type="text"
+              value={fname}
+              onChange={(event) => setFname(event.target.value)}
+            />
+          </label>
+          <label className="text">
+            Your lover's name
+            <input
+              type="text"
+              value={sname}
+              onChange={(event) => setSname(event.target.value)}
+            />
+          </label>
+        </div>
+        <Button className="matchButton" handleClick={(e) => getMatch(e)}>
+          Get Match
+        </Button>
         {percentage && result ? (
           <div>
             <p>{percentage}%</p>
