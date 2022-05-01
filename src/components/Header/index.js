@@ -7,7 +7,7 @@ const Header = () => {
     // <Banner img src={img} alt="scott disick">
     //   <h1>Love calculator</h1>;
     // </Banner>
-    <Banner img="images/banner2.png" alt="scott disick">
+    <Banner img="images/banner2.png" alt="Fluffy background image.">
       <h1>Love calculator</h1>
     </Banner>
   );

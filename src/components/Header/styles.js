@@ -12,8 +12,12 @@ export const Banner = styled.header`
   color: white;
 
   img {
-    width: 100%;
+    width: 100vw;
     object-fit: cover;
+
+    @media ${device.mobileM} {
+      background-image: 100%;
+    }
   }
   h1 {
     margin-top: 0;
@@ -21,11 +25,5 @@ export const Banner = styled.header`
     padding-top: 1rem;
     font-size: 4rem;
     text-align: center;
-  }
-
-  @media ${device.mobileL} {
-    width: 100%;
-    /*   display: flex;
-    flex-direction: row; */
   }
 `;
