@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import sad from "./../../assets/sound/sad-audience.mp3";
 import happy from "./../../assets/sound/happy-audience.mp3";
 import Redo from "../Redo";
+import Success from "../Success";
 
 const Match = () => {
   const [fname, setFname] = useState("");
@@ -26,9 +27,7 @@ const Match = () => {
       options
     );
     const data = await response.json();
-    console.log(data);
-    // setFname(fname);
-    // setSname(sname);
+    // console.log(data);
     setPercentage(data.percentage);
     setResult(data.result);
     setAudience(data.audience);
@@ -71,6 +70,7 @@ const Match = () => {
         {parseInt(percentage) > 50 && (
           <div>
             <audio src={happy} muted={audience} autoPlay={true} />
+            <Success />
           </div>
         )}
 
