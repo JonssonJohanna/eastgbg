@@ -76,12 +76,12 @@ const Match = () => {
             <p>{result}</p>
           </div>
         ) : (
-          <p>se your result</p>
+          <p className="introduction">See your result</p>
         )}
         {parseInt(percentage) < 50 && (
           <div>
             <audio src={sad} muted={audience} autoPlay={true} />
-            <Redo />
+            <Redo className="introduction" />
           </div>
         )}
         {parseInt(percentage) > 50 && (

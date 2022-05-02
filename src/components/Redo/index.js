@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./redo.css";
 
 const Redo = () => {
@@ -13,7 +12,11 @@ const Redo = () => {
   }, [redo]); */
   return (
     <div>
-      {!redo && <button onClick={() => setRedo(true)}>REDO</button>}
+      {!redo && (
+        <button onClick={() => setRedo(true)} className="btn">
+          REDO
+        </button>
+      )}
       <div>
         {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />}
       </div>

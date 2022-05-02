@@ -10,7 +10,7 @@ const Success = () => {
   return (
     <div>
       {!successResult && (
-        <button onClick={() => setSuccessResult(true)}>
+        <button onClick={() => setSuccessResult(true)} className="btn">
           Happy with your result?
         </button>
       )}

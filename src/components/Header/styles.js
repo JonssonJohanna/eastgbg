@@ -6,24 +6,30 @@ export const Banner = styled.header`
   background-size: cover;
   background-position: bottom;
   margin-top: 0;
-  width: 100vw;
-  height: 10rem;
   background-repeat: no-repeat;
   color: white;
+  width: 100%;
+  height: 8rem;
+  @media ${device.laptop} {
+    height: 10rem;
+    width: 100vw;
+  }
 
   img {
-    width: 100vw;
+    width: 100%;
     object-fit: cover;
-
-    @media ${device.mobileM} {
-      background-image: 100%;
+    @media ${device.laptop} {
+      width: 100vw;
     }
   }
   h1 {
     margin-top: 0;
     font-family: Cherry;
     padding-top: 1rem;
-    font-size: 4rem;
     text-align: center;
+    font-size: 3rem;
+    @media ${device.laptop} {
+      font-size: 4rem;
+    }
   }
 `;
