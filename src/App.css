@@ -1,9 +1,3 @@
-/* @font-face {
-  font-family: "Cherry";
-  src: local("Cherry"), local("Cherry"),
-    url("../src/assets/fonts/Cherry.woff") format("woff");
-}
- */
 .App {
   text-align: center;
   background-color: #e19689;

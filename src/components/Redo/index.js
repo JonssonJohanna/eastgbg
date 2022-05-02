@@ -4,12 +4,6 @@ import "./redo.css";
 const Redo = () => {
   const [redo, setRedo] = useState(false);
 
-  // function clickEventHandler() {
-  //   setRedo(true);
-  // }
-  /*   useEffect(() => {
-    setRedo(true);
-  }, [redo]); */
   return (
     <div>
       {!redo && (
@@ -18,7 +12,13 @@ const Redo = () => {
         </button>
       )}
       <div>
-        {redo && <img src="https://i.gifer.com/UuFm.gif" alt="Scott Disick" />}
+        {redo && (
+          <img
+            src="https://i.gifer.com/UuFm.gif"
+            alt="Scott Disick"
+            className="gif"
+          />
+        )}
       </div>
     </div>
   );

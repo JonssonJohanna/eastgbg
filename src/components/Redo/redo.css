@@ -2,6 +2,7 @@
   height: 4rem;
   width: 19rem;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   background-color: #b2322f;
   color: white;
   border: none;
@@ -16,4 +17,16 @@
 
 .btn:hover {
   background-color: #ac1d1b;
+}
+
+.gif {
+  border: #ac1d1b solid 5px;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  .gif {
+    border: #ac1d1b solid 5px;
+    width: 70%;
+  }
 }

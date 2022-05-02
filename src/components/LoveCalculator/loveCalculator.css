@@ -51,6 +51,12 @@ input {
   display: flex;
   flex-direction: row;
 }
+.resultText {
+  width: 24%;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   .text {

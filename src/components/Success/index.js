@@ -4,9 +4,6 @@ import "./success.css";
 const Success = () => {
   const [successResult, setSuccessResult] = useState(false);
 
-  /*   useEffect(() => {
-    setRedo(true);
-  }, [redo]); */
   return (
     <div>
       {!successResult && (
@@ -19,6 +16,7 @@ const Success = () => {
           <img
             src="https://media.giphy.com/media/DW4rMJGHi5fKPioakC/giphy.gif"
             alt="Kris Jenner saying that she is excited."
+            className="gif"
           />
         )}
       </div>
