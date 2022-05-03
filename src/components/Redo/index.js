@@ -6,7 +6,9 @@ const Redo = () => {
 
   return (
     <div>
-      {!redo && <Buttons onClick={() => setRedo(true)}>REDO</Buttons>}
+      {!redo && (
+        <Buttons onClick={() => setRedo(true)}>Get relationship advice</Buttons>
+      )}
       <div>
         {redo && (
           <Gif src="https://i.gifer.com/UuFm.gif" alt="Scott Disick"></Gif>

@@ -8,7 +8,7 @@ const Success = () => {
     <div>
       {!successResult && (
         <Buttons onClick={() => setSuccessResult(true)}>
-          Happy with your result?
+          Let's celebrate!
         </Buttons>
       )}
       <div>
