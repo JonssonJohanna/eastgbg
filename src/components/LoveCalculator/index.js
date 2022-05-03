@@ -75,7 +75,7 @@ const Match = () => {
             <p>{result}</p>
           </div>
         ) : (
-          <p className="resultText">See your result</p>
+          <p className="resultText"> (100% scientific results) </p>
         )}
         {parseInt(percentage) < 50 && (
           <div>
