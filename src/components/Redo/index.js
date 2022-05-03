@@ -1,23 +1,15 @@
+import { Buttons, Gif } from "./styles";
 import React, { useState } from "react";
-import "./redo.css";
 
 const Redo = () => {
   const [redo, setRedo] = useState(false);
 
   return (
     <div>
-      {!redo && (
-        <button onClick={() => setRedo(true)} className="btn">
-          REDO
-        </button>
-      )}
+      {!redo && <Buttons onClick={() => setRedo(true)}>REDO</Buttons>}
       <div>
         {redo && (
-          <img
-            src="https://i.gifer.com/UuFm.gif"
-            alt="Scott Disick"
-            className="gif"
-          />
+          <Gif src="https://i.gifer.com/UuFm.gif" alt="Scott Disick"></Gif>
         )}
       </div>
     </div>

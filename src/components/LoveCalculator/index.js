@@ -28,7 +28,6 @@ const Match = () => {
       options
     );
     const data = await response.json();
-    // console.log(data);
     setPercentage(data.percentage);
     setResult(data.result);
     setAudience(data.audience);

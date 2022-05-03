@@ -1,13 +1,9 @@
+import { Buttons } from "./styles";
 import React from "react";
 import PropTypes from "prop-types";
-import "./button.css";
 
 const Button = (props) => {
-  return (
-    <button onClick={props.handleClick} className="btn">
-      {props.buttonText}
-    </button>
-  );
+  return <Buttons onClick={props.handleClick}>{props.buttonText}</Buttons>;
 };
 
 Button.propTypes = {

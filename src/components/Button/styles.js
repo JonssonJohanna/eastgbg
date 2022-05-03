@@ -1,4 +1,6 @@
-.btn {
+import styled from "styled-components";
+
+export const Buttons = styled.button`
   height: 4rem;
   width: 19rem;
   margin-top: 3rem;
@@ -12,8 +14,8 @@
   transition: 0.2s ease;
   cursor: pointer;
   display: block;
-}
 
-.btn:hover {
-  background-color: #ac1d1b;
-}
+  :hover {
+    background-color: #ac1d1b;
+  }
+`;

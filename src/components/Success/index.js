@@ -1,5 +1,5 @@
+import { Buttons, Gif } from "./styles";
 import React, { useState } from "react";
-import "./success.css";
 
 const Success = () => {
   const [successResult, setSuccessResult] = useState(false);
@@ -7,17 +7,16 @@ const Success = () => {
   return (
     <div>
       {!successResult && (
-        <button onClick={() => setSuccessResult(true)} className="btn">
+        <Buttons onClick={() => setSuccessResult(true)}>
           Happy with your result?
-        </button>
+        </Buttons>
       )}
       <div>
         {successResult && (
-          <img
+          <Gif
             src="https://media.giphy.com/media/DW4rMJGHi5fKPioakC/giphy.gif"
             alt="Kris Jenner saying that she is excited."
-            className="gif"
-          />
+          ></Gif>
         )}
       </div>
     </div>
